@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Price predictor</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+  <br>
+  <br>
+  <br>
+<body>
+	<h1>Price predictor</h1>
+  <h2>Team 10, section A</h2>
+  <br>
+	<p>Input the squared meters & the ZipCode of a house to predict its price</p>
+	<form id="prediction-form">
+      <label for="bedrooms">Bedrooms:</label>
+      <input type="number" id="bedrooms" name="bedrooms" required>
+
+      <label for="bathrooms">Bathrooms:</label>
+      <input type="number" id="bathrooms" name="bathrooms" required>
+
+      <label for="sqft_living">Living Area (sqft):</label>
+      <input type="number" id="sqft_living" name="sqft_living" required>
+
+      <label for="sqft_lot">Lot Area (sqft):</label>
+      <input type="number" id="sqft_lot" name="sqft_lot" required>
+
+      <label for="floors">Floors:</label>
+      <input type="number" id="floors" name="floors" step="0.1" required>
+
+      <label for="waterfront">Waterfront (1 for Yes, 0 for No):</label>
+      <input type="number" id="waterfront" name="waterfront" min="0" max="1" required>
+
+      <label for="view">View (0-4):</label>
+      <input type="number" id="view" name="view" min="0" max="4" required>
+
+    <label for="condition">Condition (1-5):</label>
+      <input type="number" id="condition" name="condition" min="1" max="5" required>
+
+      <label for="grade">Grade (1-13):</label>
+      <input type="number" id="grade" name="grade" min="1" max="13" required>
+
+      <label for="yr_built">Year Built:</label>
+      <input type="number" id="yr_built" name="yr_built" required>
+
+      <label for="yr_renovated">Year Renovated (0 if none):</label>
+      <input type="number" id="yr_renovated" name="yr_renovated" required>
+
+      <label for="zipcode">Zipcode:</label>
+      <input type="number" id="zipcode" name="zipcode" required>
+
+      <label for="lat">Latitude:</label>
+      <input type="number" id="lat" name="lat" step="0.000001" required>
+
+      <label for="long">Longitude:</label>
+      <input type="number" id="long" name="long" step="0.000001" required>
+      
+    <br>
+    <br>
+      <button type="submit">Get Prediction</button>
+    </form>
+    <p id="result"></p>
+<br>
+
+  <div class="container">
+		<img src="https://brandemia.org/sites/default/files/inline/images/logo_esade_portada.jpg" alt="ESADE" width="200">
+	</div>
+
+	<script src="script.js"></script>
+  <style src="style.css"></style>
+</body>
+</html>
